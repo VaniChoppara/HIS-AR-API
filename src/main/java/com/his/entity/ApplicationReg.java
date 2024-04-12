@@ -27,7 +27,7 @@ public class ApplicationReg {
 	@UpdateTimestamp
 	private LocalDate updatedDate;
 	private Integer planId	;
-	private Integer  citizenId;
+	private Long  citizenId;
 	
 
 	public Integer getAppNumber() {
@@ -78,10 +78,10 @@ public class ApplicationReg {
 	public void setPlanId(Integer planId) {
 		this.planId = planId;
 	}
-	public Integer getCitizenId() {
+	public Long getCitizenId() {
 		return citizenId;
 	}
-	public void setCitizenId(Integer citizenId) {
+	public void setCitizenId(Long citizenId) {
 		this.citizenId = citizenId;
 	}
 	

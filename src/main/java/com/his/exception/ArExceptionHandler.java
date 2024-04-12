@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @ControllerAdvice
 public class ArExceptionHandler {
 	
-	// AR Custom Exception
+	// AR  Custom Exception
 	@ExceptionHandler(value=ArException.class)
 	public ResponseEntity<ArApiError> handleEdException(ArException e) {
 		ArApiError apiError=new ArApiError("AR-API-03", e.getMessage(), new Date());
